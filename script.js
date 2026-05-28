@@ -148,6 +148,11 @@ document.addEventListener('DOMContentLoaded', () => {
   navToggle.addEventListener('click', () => {
     navToggle.classList.toggle('active');
     navLinks.classList.toggle('active');
+
+    // Se o menu está abrindo, forçar a nav a reaparecer (caso esteja escondida pelo scroll)
+    if (navLinks.classList.contains('active')) {
+      nav.classList.remove('nav-hidden');
+    }
   });
 
   // Close mobile menu on link click

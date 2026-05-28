@@ -728,7 +728,7 @@ a:hover {
 .nav-toggle {
   display: none;
   flex-direction: column;
-  gap: 5px;
+  gap: 6px;
   background: none;
   border: none;
   cursor: pointer;
@@ -739,22 +739,23 @@ a:hover {
 .nav-toggle span {
   display: block;
   width: 24px;
-  height: 1.5px;
+  height: 2px;
   background: var(--color-cream);
-  transition: all 0.3s var(--ease-elegant);
-  transform-origin: center;
+  transition: all 0.35s var(--ease-elegant);
+  transform-origin: center center;
 }
 
 .nav-toggle.active span:nth-child(1) {
-  transform: rotate(45deg) translateY(6.5px);
+  transform: translateY(8px) rotate(45deg);
 }
 
 .nav-toggle.active span:nth-child(2) {
   opacity: 0;
+  transform: scaleX(0);
 }
 
 .nav-toggle.active span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-6.5px);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 
