@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const startPosition = window.pageYOffset || window.scrollY;
         const distance = targetPosition - startPosition;
-        const duration = 1000; // Duração de 1 segundo para um scroll fluido e elegante
+        const duration = 750; // Duração de 750ms para um scroll fluido, ágil e elegante
         let start = null;
 
         function step(timestamp) {
