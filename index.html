@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guimarães Eventos — Espaço para Momentos Inesquecíveis</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <meta name="description" content="Guimarães Eventos: espaço de eventos com decoração assinada pela Jena. Casamentos, recepções, festas de 15 anos e locação de espaço em ambiente sofisticado." />
+  <meta name="keywords" content="eventos, casamentos, recepções, festas de 15 anos, debutante, espaço para eventos, decoração, Guimarães Eventos, Jena Decorações" />
+  <meta property="og:title" content="Guimarães Eventos — Espaço para Momentos Inesquecíveis" />
+  <meta property="og:description" content="Espaço de eventos com decoração assinada pela Jena. Transformamos seus sonhos em realidade." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- ENVELOPE OVERLAY                               -->
+  <!-- ══════════════════════════════════════════════ -->
+  <div id="envelope-overlay" aria-label="Clique para abrir o convite">
+    <!-- Floating particles -->
+    <div class="particles" aria-hidden="true">
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+    </div>
+
+    <div class="envelope-wrapper">
+      <div class="envelope" id="envelope">
+        <!-- Back of envelope -->
+        <div class="envelope-back"></div>
+
+        <!-- Letter inside -->
+        <div class="envelope-letter" id="envelope-letter">
+          <div class="letter-content">
+            <div class="letter-ornament">✦</div>
+            <p class="letter-title">Você está convidado(a)</p>
+            <div class="letter-divider"></div>
+            <p class="letter-subtitle">Guimarães Eventos</p>
+            <p class="letter-desc">Decoração assinada por Jena</p>
+          </div>
+        </div>
+
+        <!-- Front of envelope (bottom part) -->
+        <div class="envelope-front"></div>
+
+        <!-- Flap (top part that opens) -->
+        <div class="envelope-flap" id="envelope-flap"></div>
+
+        <!-- Wax seal -->
+        <div class="envelope-seal" id="envelope-seal"></div>
+      </div>
+
+      <p class="envelope-cta" id="envelope-cta">
+        <span class="cta-icon">✉</span>
+        Toque para abrir seu convite
+      </p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- LANDING PAGE                                   -->
+  <!-- ══════════════════════════════════════════════ -->
+  <main id="landing-page" class="hidden">
+
+    <!-- NAVIGATION -->
+    <nav id="main-nav">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">
+          <span class="nav-logo-text">Guimarães</span>
+          <span class="nav-logo-accent">Eventos</span>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#experience">Experiência</a></li>
+          <li><a href="#contact" class="nav-cta">Fale Conosco</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-particles" aria-hidden="true">
+        <span class="hero-particle"></span>
+        <span class="hero-particle"></span>
+        <span class="hero-particle"></span>
+        <span class="hero-particle"></span>
+        <span class="hero-particle"></span>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-line"></span>
+          <span class="badge-text">Decoração assinada por Jena</span>
+          <span class="badge-line"></span>
+        </div>
+        <h1 class="hero-title">
+          <span class="title-line title-line-1">Guimarães</span>
+          <span class="title-line title-line-2">Eventos</span>
+        </h1>
+        <p class="hero-subtitle">Transformamos sonhos em momentos eternos.<br />Cada detalhe pensado para criar memórias inesquecíveis.</p>
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-primary" id="hero-cta-services">Nossos Serviços</a>
+          <a href="#contact" class="btn btn-secondary" id="hero-cta-contact">Agendar Visita</a>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span>Deslize</span>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">Quem Somos</span>
+          <h2 class="section-title">Onde Cada Detalhe<br /><em>Conta uma História</em></h2>
+          <div class="section-divider">
+            <span class="divider-diamond">◆</span>
+          </div>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="about-lead">Somos mais do que um espaço de eventos.</p>
+            <p class="about-lead" style="color: var(--color-gold);">Somos realizadores de sonhos.</p>
+            <p><strong>Guimarães Eventos</strong> atua desde 2018, nascendo da paixão por celebrações que marcam vidas. Com decoração assinada pela talentosa <strong>Jena</strong>, cada evento se torna uma obra de arte única, pensada para emocionar e surpreender.</p>
+            <p>Nosso compromisso é proporcionar uma experiência acolhedora e memorável, onde cada flor, cada luz e cada tecido são escolhidos com carinho para transformar os seus sonhos em realidade.</p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-icon">♥</span>
+                <span class="stat-label">Momentos<br />Inesquecíveis</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-icon">✦</span>
+                <span class="stat-label">Decoração<br />Exclusiva</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-icon">◆</span>
+                <span class="stat-label">Experiência<br />Emocional</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image-wrapper">
+            <div class="about-image">
+              <img src="images/we.jpg" alt="Equipe do Guimarães Eventos" loading="lazy" />
+            </div>
+            <div class="about-image-accent"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">Nossos Serviços</span>
+          <h2 class="section-title">Celebrações que<br /><em>Encantam</em></h2>
+          <div class="section-divider">
+            <span class="divider-diamond">◆</span>
+          </div>
+        </div>
+        <div class="services-grid">
+
+          <!-- Casamento -->
+          <div class="service-card" id="service-casamento">
+            <div class="card-image">
+              <img src="images/casamento.png" alt="Espaço decorado para casamento" loading="lazy" />
+              <div class="card-image-overlay"></div>
+            </div>
+            <div class="card-content">
+              <div class="card-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                </svg>
+              </div>
+              <h3 class="card-title">Casamentos</h3>
+              <p class="card-description">Espaço dos sonhos para o dia mais especial da sua vida, com ambiente e decoração que traduzem toda a emoção do seu amor.</p>
+              <ul class="card-features">
+                <li>Espaço completo para cerimônia e festa</li>
+                <li>Decoração personalizada</li>
+                <li>Pacotes Premium e Básico</li>
+              </ul>
+              <a href="#contact" class="card-link">
+                Saber mais
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Recepção -->
+          <div class="service-card" id="service-recepcao">
+            <div class="card-image">
+              <img src="images/recepcao.jpeg" alt="Espaço decorado para recepção" loading="lazy" />
+              <div class="card-image-overlay"></div>
+            </div>
+            <div class="card-content">
+              <div class="card-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 22h8" />
+                  <path d="M7 10h10" />
+                  <path d="M12 15v7" />
+                  <path d="M12 15a5 5 0 0 0 5-5V3H7v7a5 5 0 0 0 5 5z" />
+                </svg>
+              </div>
+              <h3 class="card-title">Recepções</h3>
+              <p class="card-description">Ambiente sofisticado e acolhedor para suas recepções e confraternizações, com cada detalhe cuidadosamente planejado.</p>
+              <ul class="card-features">
+                <li>Espaço decorado completo</li>
+                <li>Ideal para confraternizações</li>
+                <li>Ambientação personalizada</li>
+              </ul>
+              <a href="#contact" class="card-link">
+                Saber mais
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 15 Anos -->
+          <div class="service-card" id="service-15anos">
+            <div class="card-image">
+              <img src="images/15anos.jpeg" alt="Espaço decorado para festa de 15 anos" loading="lazy" />
+              <div class="card-image-overlay"></div>
+            </div>
+            <div class="card-content">
+              <div class="card-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1z" />
+                </svg>
+              </div>
+              <h3 class="card-title">Festas de 15 Anos</h3>
+              <p class="card-description">Transformamos o sonho da debutante em uma noite mágica e inesquecível, com toda a elegância que esse momento merece.</p>
+              <ul class="card-features">
+                <li>Decoração temática exclusiva</li>
+                <li>Ambiente encantador</li>
+                <li>Pacote especial debutante</li>
+              </ul>
+              <a href="#contact" class="card-link">
+                Saber mais
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Locação -->
+          <div class="service-card" id="service-locacao">
+            <div class="card-image">
+              <img src="images/locacao.jpeg" alt="Espaço para locação" loading="lazy" />
+              <div class="card-image-overlay"></div>
+            </div>
+            <div class="card-content">
+              <div class="card-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                  <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+              </div>
+              <h3 class="card-title">Locação do Espaço</h3>
+              <p class="card-description">Alugue nosso espaço e traga a sua equipe de decoração. Liberdade total para criar o evento dos seus sonhos.</p>
+              <ul class="card-features">
+                <li>Sem pacote obrigatório de decoração</li>
+                <li>Espaço versátil e amplo</li>
+                <li>Infraestrutura completa</li>
+              </ul>
+              <a href="#contact" class="card-link">
+                Saber mais
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+      <div class="experience-bg" aria-hidden="true"></div>
+      <div class="section-container">
+        <div class="section-header light">
+          <span class="section-label">Nossa Essência</span>
+          <h2 class="section-title">Uma Experiência<br /><em>Inesquecível</em></h2>
+          <div class="section-divider">
+            <span class="divider-diamond">◆</span>
+          </div>
+        </div>
+        <div class="experience-grid">
+          <div class="exp-card" id="exp-acolhimento">
+            <div class="exp-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3>Acolhimento</h3>
+            <p>Cada cliente é recebido com carinho e atenção. Entendemos que seu evento é único e tratamos com toda a delicadeza que ele merece.</p>
+          </div>
+          <div class="exp-card" id="exp-emocao">
+            <div class="exp-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg>
+            </div>
+            <h3>Emoção</h3>
+            <p>Criamos ambientes que tocam o coração. Cada detalhe é pensado para emocionar e criar memórias que duram para sempre.</p>
+          </div>
+          <div class="exp-card" id="exp-exclusividade">
+            <div class="exp-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Exclusividade</h3>
+            <p>Decoração assinada pela Jena, com projetos exclusivos que transformam nosso espaço em cenários de sonho para cada evento.</p>
+          </div>
+          <div class="exp-card" id="exp-cuidado">
+            <div class="exp-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Conexão</h3>
+            <p>Unimos pessoas, histórias e momentos. Decoramos com propósito para que cada abraço, cada olhar e cada sorriso sejam eternizados.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL / QUOTE SECTION -->
+    <section id="quote-section">
+      <div class="section-container">
+        <div class="quote-wrapper">
+          <div class="quote-marks" aria-hidden="true">"</div>
+          <blockquote class="quote-text">
+            Nosso maior presente é ver o brilho nos olhos de quem realiza o sonho de uma celebração perfeita.
+          </blockquote>
+          <div class="quote-author">
+            <div class="quote-line"></div>
+            <span>Guimarães Eventos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / CTA SECTION -->
+    <section id="contact">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">Vamos Conversar</span>
+          <h2 class="section-title">Realize Seu<br /><em>Sonho</em></h2>
+          <div class="section-divider">
+            <span class="divider-diamond">◆</span>
+          </div>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p class="contact-lead">Cada celebração começa com uma conversa. Conte-nos sobre o seu sonho e nós cuidamos de cada detalhe.</p>
+            <div class="contact-details">
+              <div class="contact-item" id="contact-instagram-guimaraes">
+                <div class="contact-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                </div>
+                <div>
+                  <span class="contact-label">Guimarães Eventos</span>
+                  <a href="https://instagram.com/guimaraeseventos10" target="_blank" rel="noopener" class="contact-value">@guimaraeseventos10</a>
+                </div>
+              </div>
+              <div class="contact-item" id="contact-instagram-jena">
+                <div class="contact-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                </div>
+                <div>
+                  <span class="contact-label">Jena Decorações</span>
+                  <a href="https://instagram.com/jenadecoracoes" target="_blank" rel="noopener" class="contact-value">@jenadecoracoes</a>
+                </div>
+              </div>
+              <div class="contact-item" id="contact-location">
+                <div class="contact-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-label">Localização</span>
+                  <a href="https://maps.app.goo.gl/GpCAWR5k9BHGVj7a9" target="_blank" rel="noopener" class="contact-value">Ver no Google Maps ↗</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-social">
+              <a href="https://instagram.com/guimaraeseventos10" target="_blank" rel="noopener" class="social-btn" id="social-instagram" aria-label="Instagram Guimarães Eventos">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+              </a>
+              <a href="https://maps.app.goo.gl/GpCAWR5k9BHGVj7a9" target="_blank" rel="noopener" class="social-btn" id="social-maps" aria-label="Google Maps Guimarães Eventos">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="contact-form-wrapper">
+            <form class="contact-form" id="contact-form" onsubmit="return false;">
+              <h3 class="form-title">Conte-nos sobre seu evento</h3>
+              <div class="form-group">
+                <label for="input-name">Seu Nome</label>
+                <input type="text" id="input-name" name="name" placeholder="Como podemos te chamar?" required />
+              </div>
+              <div class="form-group">
+                <label for="input-event">Tipo de Evento</label>
+                <select id="input-event" name="event_type" required>
+                  <option value="" disabled selected>Selecione o tipo de evento</option>
+                  <option value="casamento">Casamento</option>
+                  <option value="recepcao">Recepção</option>
+                  <option value="15anos">Festa de 15 Anos</option>
+                  <option value="locacao">Locação do Espaço</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="input-date">Data Prevista</label>
+                  <input type="date" id="input-date" name="date" />
+                </div>
+                <div class="form-group">
+                  <label for="input-guests">Nº de Convidados</label>
+                  <input type="number" id="input-guests" name="guests" placeholder="Estimativa" min="1" oninput="if(this.value < 1 && this.value !== '') this.value = 1;" onkeydown="if(event.key === '-' || event.key === 'e') event.preventDefault();" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="input-message">Mensagem (opcional)</label>
+                <textarea id="input-message" name="message" rows="3" placeholder="Conte-nos mais sobre o seu sonho..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="submit-form">
+                <span>Enviar Mensagem</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <span class="footer-logo-text">Guimarães</span>
+            <span class="footer-logo-accent">Eventos</span>
+            <p class="footer-tagline">Momentos que se tornam eternos.</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-col">
+              <h4>Serviços</h4>
+              <ul>
+                <li><a href="#service-casamento">Casamentos</a></li>
+                <li><a href="#service-recepcao">Recepções</a></li>
+                <li><a href="#service-15anos">15 Anos</a></li>
+                <li><a href="#service-locacao">Locação</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Conecte-se</h4>
+              <ul>
+                <li><a href="https://instagram.com/guimaraeseventos10" target="_blank" rel="noopener">@guimaraeseventos10</a></li>
+                <li><a href="https://instagram.com/jenadecoracoes" target="_blank" rel="noopener">@jenadecoracoes</a></li>
+                <li><a href="https://maps.app.goo.gl/GpCAWR5k9BHGVj7a9" target="_blank" rel="noopener">Como Chegar (Mapa)</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2018 Guimarães Eventos. Todos os direitos reservados.</p>
+          <p>Decoração assinada por <strong>Jena</strong></p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
