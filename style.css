@@ -635,6 +635,11 @@ a:hover {
   transform: translateY(-100%);
 }
 
+#main-nav.menu-open {
+  transform: none !important;
+  transition: none;
+}
+
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -1704,8 +1709,9 @@ a:hover {
     position: fixed;
     top: 0;
     right: 0;
-    bottom: 0;
     width: 280px;
+    height: 100vh;
+    height: 100dvh;
     background: rgba(11, 10, 8, 0.98);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -1718,10 +1724,24 @@ a:hover {
     transition: transform 0.5s var(--ease-elegant);
     border-left: 1px solid var(--color-border);
     z-index: 999;
+    overflow-y: auto;
   }
 
   .nav-links.active {
     transform: translateX(0);
+  }
+
+  /* Overlay escuro atrás da gaveta */
+  .nav-links.active::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
   }
 
   .nav-links li {

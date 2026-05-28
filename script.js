@@ -149,9 +149,14 @@ document.addEventListener('DOMContentLoaded', () => {
     navToggle.classList.toggle('active');
     navLinks.classList.toggle('active');
 
-    // Se o menu está abrindo, forçar a nav a reaparecer (caso esteja escondida pelo scroll)
+    // Se o menu está abrindo, forçar a nav a reaparecer e travar o scroll
     if (navLinks.classList.contains('active')) {
       nav.classList.remove('nav-hidden');
+      nav.classList.add('menu-open');
+      document.body.style.overflow = 'hidden';
+    } else {
+      nav.classList.remove('menu-open');
+      document.body.style.overflow = '';
     }
   });
 
@@ -160,6 +165,8 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', () => {
       navToggle.classList.remove('active');
       navLinks.classList.remove('active');
+      nav.classList.remove('menu-open');
+      document.body.style.overflow = '';
     });
   });
 
