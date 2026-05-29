@@ -1855,3 +1855,124 @@ a:hover {
     bottom: 16px;
   }
 }
+
+/* ─── PRIVACY PAGE & FOOTER LINKS ─────────── */
+.footer-bottom a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-left: 5px;
+}
+
+.footer-bottom a:hover {
+  color: var(--color-gold);
+}
+
+.privacy-page {
+  background-color: var(--color-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.privacy-nav {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-bg-warm);
+}
+
+.privacy-nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.privacy-nav-logo {
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-size: 24px;
+}
+
+.privacy-nav-logo-text {
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.privacy-nav-logo-accent {
+  color: var(--color-gold);
+  font-style: italic;
+  margin-left: 4px;
+}
+
+.privacy-content {
+  flex: 1;
+  padding: clamp(60px, 8vw, 100px) 0;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.privacy-content h1 {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 5vw, 56px);
+  color: var(--color-gold-light);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.privacy-last-update {
+  font-family: var(--font-accent);
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-bottom: 48px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.privacy-body {
+  font-family: var(--font-body);
+  font-size: clamp(18px, 2.5vw, 22px);
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.privacy-body h2 {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 3.5vw, 32px);
+  color: var(--color-gold);
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.privacy-body p {
+  margin-bottom: 24px;
+}
+
+.privacy-body ul {
+  margin-bottom: 24px;
+  padding-left: 24px;
+  list-style-type: none;
+}
+
+.privacy-body ul li {
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.privacy-body ul li::before {
+  content: "✦";
+  position: absolute;
+  left: -20px;
+  color: var(--color-gold);
+  font-size: 14px;
+}
+
+.privacy-back-btn-container {
+  margin-top: 60px;
+  display: flex;
+  justify-content: flex-start;
+}
